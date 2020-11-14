@@ -67,10 +67,3 @@ workflows:
           group: '2x-firefox on CircleCI'
           start: 'npm run start:ci'
 
-      - release:
-          filters:
-            branches:
-              only:
-                - master
-          requires:
-            - 3 machines
