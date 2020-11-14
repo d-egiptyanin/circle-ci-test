@@ -1,6 +1,6 @@
 orbs:
   cypress: cypress-io/cypress@1.16.1
-
+  
 version: 2.1
 
 workflows:
@@ -74,4 +74,3 @@ workflows:
                 - master
           requires:
             - 3 machines
-            
