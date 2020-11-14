@@ -1,6 +1,6 @@
 orbs:
   cypress: cypress-io/cypress@1.16.1
-  
+
 version: 2.1
 
 workflows:
@@ -47,7 +47,7 @@ workflows:
           browser: chrome
           record: true
           parallel: true
-          parallelism: 2
+          parallelism: 1
           group: '2x-chrome on CircleCI'
           start: 'npm run start:ci'
 
@@ -63,7 +63,7 @@ workflows:
           browser: firefox
           record: true
           parallel: true
-          parallelism: 2
+          parallelism: 1
           group: '2x-firefox on CircleCI'
           start: 'npm run start:ci'
 
